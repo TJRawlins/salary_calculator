@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Salary Calculator</title>
+  </head>
+  <body>
+    <!-- <div class="error-modal-container">
+      <div id="invalid-input">
+        <i class="fas fa-exclamation-triangle alert"></i>
+        <h2>Please enter an amount and select "Annual" or "Hourly".</h2>
+        <i class="fas fa-times exit"></i>
+      </div>
+    </div> -->
+    <div class="container">
+      <h1>Salary<span>Calculator</span></h1>
+      <form>
+        <div class="results-container">
+          <label>Annually: <span>0.00</span></label>
+          <label>Monthly: <span>0.00</span></label>
+          <label>Biweekly: <span>0.00</span></label>
+          <label>Weekly: <span>0.00</span></label>
+          <label>Hourly: <span>0.00</span></label>
+        </div>
+        <div class="input-container">
+          <input type="number" placeholder="Enter pay..." class="main-input" />
+          <div class="radio-group">
+            <label class="radio">
+              <span class="radio-input">
+                <input type="radio" id="annual" name="wage" value="annual" />
+                <span class="radio-control"></span>
+              </span>
+              <span class="radio-label">Salary</span>
+            </label>
+            <label class="radio">
+              <span class="radio-input">
+                <input type="radio" id="hourly" name="wage" value="hourly" />
+                <span class="radio-control"></span>
+              </span>
+              <span class="radio-label">Hourly</span>
+            </label>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn" id="calc">
+            <i class="fas fa-calculator"></i>Calculate
+          </button>
+          <button type="button" class="btn" id="clear">
+            <i class="fas fa-eraser"></i>Clear
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
